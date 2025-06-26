@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Calculadora de Gas Fees</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Calculadora de Gas Fees (Ethereum)</h1>
+
+    <label for="gasLimit">Gas usado:</label>
+    <input type="number" id="gasLimit" placeholder="Ej: 21000">
+
+    <label for="gasPrice">Precio del gas (Gwei):</label>
+    <input type="number" id="gasPrice" placeholder="Ej: 50">
+
+    <label for="ethPrice">Precio ETH (USD):</label>
+    <input type="number" id="ethPrice" placeholder="Ej: 3500">
+
+    <button onclick="calcularFee()">Calcular</button>
+
+    <div id="resultado"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
